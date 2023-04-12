@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Meet and Greet - Messi</title>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero__left">
+        <h1>¿Te gustaría conocer al mejor del mundo?</h1>
+        <h3>¡Participá por un Meet & Greet con Lionel Messi!</h3>
+        <a href="#form" class="btn">Participar</a>
+      </div>
+      <div class="hero__right">
+        <img src="./img/heroImg.jpeg" alt="#" />
+      </div>
+    </section>
+
+    <section class="divider">
+      <div class="divider__item">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>Buenos Aires</p>
+      </div>
+      <div class="divider__item">
+        <i class="fa-solid fa-calendar-days"></i>
+        <p>23/10</p>
+      </div>
+      <div class="divider__item">
+        <i class="fa-solid fa-clock"></i>
+        <p>21:00hs</p>
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="info__card">
+        <div class="info__card--text">
+          <h2>Una oportunidad única</h2>
+          <p>
+            El campeon del mundo viene a Buenos Aires y vos podrías conocerlo.
+            El Meet & Greet será llevado a cabo el día 23 de Octubre a las
+            21:00hs. La ubicación exacta será informada al ganador de forma
+            privada.
+          </p>
+        </div>
+        <div class="info__card--img">
+          <img src="./img/infoImg1.jpeg" alt="#" />
+        </div>
+      </div>
+      <div class="info__card">
+        <div class="info__card--img">
+          <img src="./img/infoImg2.jpg" alt="#" />
+        </div>
+        <div class="info__card--text">
+          <h2>Llevate un recuerdo inolvidable</h2>
+          <p>
+            Durante el evento podrás conversar, tomarte fotografías, pedirle
+            autógrafos y más. Ademas, te llevarás una camiseta de Argentina
+            original firmada por él!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="divider">
+      <div class="divider__item">
+        <h3>Ingresá tus datos en el formulario para participar!</h3>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <div class="form-section__img">
+        <img src="./img/formImg.jpg" alt="#" />
+      </div>
+
+      <form class="form" action="respuesta.html" id="form">
+        <div class="form__name-date">
+          <label for="nombre" class="form__label">
+            <span>Nombre completo</span>
+            <input type="text" name="nombre" id="nombre" required />
+          </label>
+          <label class="form__label" for="nacimiento">
+            <span>Nacimiento</span>
+            <input type="date" name="nacimiento" id="nacimiento" required />
+          </label>
+        </div>
+        <label for="email" class="form__label">
+          <span>Email</span>
+          <input type="email" name="email" id="email" required />
+        </label>
+        <label for="localidad" class="form__label">
+          <span>Localidad</span>
+          <input type="text" name="localidad" id="localidad" required />
+        </label>
+        <div class="form__gender">
+          <span class="form__gender--title">Género</span>
+          <div class="form__gender--options">
+            <label>
+              <input type="radio" name="gender" value="f" />
+              <span>Femenino</span>
+            </label>
+
+            <label>
+              <input type="radio" name="gender" value="m" />
+              <span>Masculino</span>
+            </label>
+
+            <label>
+              <input type="radio" name="gender" value="false" />
+              <span>Otro</span>
+            </label>
+            <label>
+              <input type="radio" name="gender" value="false" />
+              <span>Prefiero no decirlo</span>
+            </label>
+          </div>
+        </div>
+        <div class="form__submit">
+          <input type="submit" value="Enviar" class="btn" />
+        </div>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <p class="footer__text">
+        ¡Para mas información, visitá nuestras redes sociales!
+      </p>
+      <div class="footer__links">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-tiktok"></i>
+      </div>
+    </footer>
+  </body>
+</html>
